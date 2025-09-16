@@ -1,28 +1,37 @@
-main {
+@import "../styles/variables"
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog__block {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, $card-width);
   grid-template-rows: repeat(2, auto);
-  margin: 46px 48px;
-  row-gap: 46px;
+  padding: 46px 48px;
+  column-gap: 46px;
+  row-gap: 48px;
+  isolation: isolate;
 }
 
 @media screen and (max-width: 487px) {
-  main {
+  .catalog__block {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, $card-width);
   }
 }
 
 @media screen and (min-width: 488px) and (max-width: 767px) {
-  main {
+  .catalog__block {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, $card-width);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  main {
+  .catalog__block {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, $card-width);
   }
 }
