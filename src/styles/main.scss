@@ -1,17 +1,17 @@
-@import "../styles/variables"
+@import '../styles/variables';
 
 .catalog {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .catalog__block {
   display: grid;
   grid-template-columns: repeat(4, $card-width);
   grid-template-rows: repeat(2, auto);
   padding: 46px 48px;
-  column-gap: 46px;
-  row-gap: 48px;
+  gap: 46px, 48px;
   isolation: isolate;
 }
 
