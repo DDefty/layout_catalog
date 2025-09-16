@@ -11,7 +11,7 @@ body {
   display: grid;
   justify-content: center;
   padding: $padding-v $padding-h;
-  gap: $gap-x;
+  gap: $gap-y $gap-x;
 }
 
 .catalog__block {
