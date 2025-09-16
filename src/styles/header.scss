@@ -38,11 +38,11 @@ body {
   transition:
     color $transition-duration,
     transform $transition-duration;
-}
 
-.is-active {
-  position: relative;
-  color: $button-color;
+  &.is-active {
+    position: relative;
+    color: $button-color;
+  }
 }
 
 .logo {
